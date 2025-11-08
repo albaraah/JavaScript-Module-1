@@ -1,0 +1,9 @@
+'use strict'
+const name = prompt('Enter your name:')
+const random_number = Math.floor(Math.random()*4) + 1
+let classe = ""
+if (random_number === 1){classe = 'Gryffindor'}
+else if (random_number === 2){classe = 'Slytherin'}
+else if (random_number === 3){classe = 'Hufflepuff'}
+else {classe = 'Ravenclaw'}
+document.write(`${name} is a ${classe}.`)
